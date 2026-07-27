@@ -449,3 +449,92 @@ footer p{
 }
 
 }
+/*================ LEYENDA ================*/
+
+.leyenda{
+    padding:90px 0;
+    background:#0c1323;
+}
+
+.leyenda-contenido{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.leyenda-img{
+    flex:1;
+}
+
+.leyenda-img img{
+    width:100%;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+    transition:.4s;
+}
+
+.leyenda-img img:hover{
+    transform:scale(1.03);
+}
+
+.leyenda-texto{
+    flex:1;
+}
+
+.titulo-seccion{
+    color:#FFD200;
+    font-size:14px;
+    letter-spacing:3px;
+    font-weight:bold;
+}
+
+.leyenda-texto h2{
+    color:#fff;
+    font-size:42px;
+    margin:10px 0;
+}
+
+.leyenda-texto h3{
+    color:#FFD200;
+    font-size:24px;
+    margin-bottom:25px;
+}
+
+.leyenda-texto p{
+    color:#d9d9d9;
+    line-height:1.9;
+    margin-bottom:18px;
+    text-align:justify;
+}
+
+.leyenda-texto strong{
+    color:#FFD200;
+}
+
+.leyenda-texto blockquote{
+    margin-top:30px;
+    border-left:5px solid #FFD200;
+    padding-left:20px;
+    color:#ffffff;
+    font-size:20px;
+    font-style:italic;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .leyenda-contenido{
+        flex-direction:column;
+    }
+
+    .leyenda-texto h2{
+        font-size:34px;
+        text-align:center;
+    }
+
+    .leyenda-texto h3{
+        text-align:center;
+    }
+
+}
