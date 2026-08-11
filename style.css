@@ -653,15 +653,51 @@ footer p{
     margin-bottom:22px;
 }
 
-.partido-card h3{
-    font-size:23px;
-    color:#020d33;
-    margin:8px 0;
+
+/*================ EQUIPOS Y LOGOS ================*/
+
+.equipos{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin:20px 0;
 }
+
+.equipo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:110px;
+}
+
+.equipo img{
+    width:75px;
+    height:75px;
+    object-fit:contain;
+    margin-bottom:10px;
+    transition:.3s ease;
+}
+
+.equipo:hover img{
+    transform:scale(1.1);
+}
+
+.equipo h3{
+    font-size:18px;
+    color:#020d33;
+    margin:0;
+    text-align:center;
+}
+
+
+/*================ VS ================*/
 
 .vs{
     width:62px;
     height:62px;
+    flex-shrink:0;
     margin:18px auto;
     border-radius:50%;
     background:#FFD600;
@@ -672,6 +708,9 @@ footer p{
     font-weight:800;
     box-shadow:0 6px 18px rgba(255,214,0,.4);
 }
+
+
+/*================ INFORMACIÓN DEL PARTIDO ================*/
 
 .info-partido{
     margin-top:22px;
@@ -686,6 +725,9 @@ footer p{
     font-weight:500;
 }
 
+
+/*================ PIE DEL CALENDARIO ================*/
+
 .calendario-footer{
     margin-top:50px;
     text-align:center;
@@ -693,7 +735,14 @@ footer p{
     font-size:15px;
 }
 
+
+/*================ RESPONSIVE ================*/
+
 @media(max-width:768px){
+
+    .calendario{
+        padding:70px 5%;
+    }
 
     .calendario-grid{
         grid-template-columns:1fr;
@@ -701,6 +750,29 @@ footer p{
 
     .partido-card.destacado{
         transform:none;
+    }
+
+    .equipos{
+        gap:10px;
+    }
+
+    .equipo{
+        width:100px;
+    }
+
+    .equipo img{
+        width:70px;
+        height:70px;
+    }
+
+    .equipo h3{
+        font-size:16px;
+    }
+
+    .vs{
+        width:55px;
+        height:55px;
+        font-size:14px;
     }
 
 }
